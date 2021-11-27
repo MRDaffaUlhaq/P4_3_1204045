@@ -97,7 +97,7 @@ namespace P4_3_1204045
         {
             if(angka2.Text != "")
             {
-                if((int.Parse(angka1.Text) >= int.Parse(angka2.Text)))
+                if((int.Parse(angka1.Text) > int.Parse(angka2.Text)))
                 {
                     epWarning.SetError(angka1, "Ups, angka 1 tidak boleh lebih besar dari angka 2");
                     epWrong.SetError(angka1, "");
@@ -109,7 +109,7 @@ namespace P4_3_1204045
 
         private void angka2_Leave(object sender, EventArgs e)
         {
-            if ((int.Parse(angka1.Text) >= int.Parse(angka2.Text)))
+            if ((int.Parse(angka1.Text) > int.Parse(angka2.Text)))
             {
                 epWarning.SetError(angka2, "Ups, angka 1 tidak boleh lebih besar dari angka 2");
                 epWrong.SetError(angka2, "");
